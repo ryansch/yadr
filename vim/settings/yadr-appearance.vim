@@ -27,5 +27,6 @@ else
   end
 endif
 
-colorscheme solarized
+syntax enable
 set background=dark
+colorscheme solarized

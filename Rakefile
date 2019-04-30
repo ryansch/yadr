@@ -37,7 +37,7 @@ task :install => [:submodule_init, :submodules] do
 end
 
 task :install_prezto do
-  if want_to_install?('zsh enhancements & prezto')
+  if want_to_install?('zsh enhancements & prezto', 'ZSH_CONFIG')
     install_prezto
   end
 end

@@ -2,8 +2,9 @@
 
 if [ ! -d "$HOME/.yadr" ]; then
     echo "Installing YADR for the first time"
-    git clone --depth=1 https://github.com/skwp/dotfiles.git "$HOME/.yadr"
+    git clone --depth=1 https://github.com/ryansch/yadr.git "$HOME/.yadr"
     cd "$HOME/.yadr"
+    git checkout ryansch-changes
     [ "$1" = "ask" ] && export ASK="true"
     rake install
 else
